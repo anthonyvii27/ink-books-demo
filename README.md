@@ -1,4 +1,12 @@
 ```shell
+cargo +nightly contract build
+```
+
+```shell
+cargo test
+```
+
+```shell
 cargo contract instantiate \
     --constructor default \
     --suri //Alice \
