@@ -1,20 +1,20 @@
-```shell
+```bash
 cargo +nightly contract build
 ```
 
-```shell
+```bash
 cargo test
 ```
 
-```shell
+```bash
 cargo contract instantiate \
-    --constructor default \
+    --constructor new \
     --suri //Alice \
     --args '[]' '[]' \
     --skip-confirm --execute
 ```
 
-```shell
+```bash
 cargo contract call \
     --contract 5Gcs6Gd73e5UkwMiuJGCghjJvdYdshPMsusuKVW1gNZ4H3yb \
     --message create_book \
@@ -23,7 +23,7 @@ cargo contract call \
     --skip-confirm --execute
 ```
 
-```shell
+```bash
 cargo contract call \
     --contract 5Gcs6Gd73e5UkwMiuJGCghjJvdYdshPMsusuKVW1gNZ4H3yb \
     --message get_books_by_owner_id \
@@ -32,7 +32,7 @@ cargo contract call \
     --skip-dry-run
 ```
 
-```shell
+```bash
 cargo contract call \
     --contract 5CN1ruHQ6fTfFGLUgL4Q4PxbAG66xVRrVZCnFUvuYGJM8NZm \
     --message update_book \
